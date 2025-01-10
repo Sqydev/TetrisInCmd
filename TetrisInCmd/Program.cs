@@ -1,25 +1,14 @@
-﻿class Program{
+﻿using System;
+
+class Program{
     static void Main(){
         Console.Clear();
         Console.BackgroundColor = ConsoleColor.Black;
-
-
-        string menuimg = @"
-            ████████╗███████╗████████╗██████╗ ██╗███████╗
-            ╚══██╔══╝██╔════╝╚══██╔══╝██╔══██╗██║██╔════╝
-               ██║   █████╗     ██║   ██████╔╝██║█████╗ 
-               ██║   ██╔══╝     ██║   ██╔╗██╚╗██║██╔══╝  
-               ██║   ███████╗   ██║   ██║╚╗██║██║███████╗
-               ╚═╝   ╚══════╝   ╚═╝   ╚═╝ ╚══╝╚═╝╚══════╝
-
-                 ██╗███╗   ██╗     ██████╗███╗   ███╗██████╗
-                 ██║████╗  ██║    ██╔════╝████╗ ████║██   ██╗
-                 ██║██╔██╗ ██║    ██║     ██╔████╔██║██   ██║
-                 ██║██║╚██╗██║    ██║     ██║╚██╔╝██║██   ██║
-                 ██║██║ ╚████║    ╚██████╗██║ ╚═╝ ██║██████╔╝
-                 ╚═╝╚═╝  ╚═══╝     ╚═════╝╚═╝     ╚═╝╚═════╝
-        ";
+        Console.ForegroundColor = ConsoleColor.White;
         
-        Console.WriteLine(menuimg);
+
+        Console.WriteLine(Assets.menuimg);
+
+        Console.ReadKey();
     }
 }
