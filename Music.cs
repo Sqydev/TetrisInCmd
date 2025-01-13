@@ -7,7 +7,7 @@ public static class Music {
 
     public static void MusicPlayer() {
         if(RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) {
-            SoundPlayer gamemusic = new SoundPlayer("Music/Theme.mp3");
+            SoundPlayer gamemusic = new SoundPlayer("Music/Theme.wav");
             gamemusic.Load();
             gamemusic.PlayLooping();
         }
