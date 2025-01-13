@@ -1,8 +1,4 @@
-﻿using System;
-using System.Media;
-using System.Runtime.InteropServices;
-
-class Program{
+﻿class Program{
     static void Main(){
         Console.Clear();
         Console.BackgroundColor = ConsoleColor.Black;
