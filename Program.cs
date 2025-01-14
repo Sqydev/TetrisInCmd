@@ -9,5 +9,7 @@
         Music.MusicPlayer();
 
         Console.ReadKey();
+
+        Game.game();
     }
 }

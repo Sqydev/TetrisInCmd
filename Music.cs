@@ -15,11 +15,13 @@ public static class Music {
         else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux) || RuntimeInformation.IsOSPlatform(OSPlatform.OSX)) {
             Core.Initialize();
             using var libVLC = new LibVLC();
-            using var mediaPlayer = new MediaPlayer(libVLC);
+            var mediaPlayer = new MediaPlayer(libVLC);
             var media = new Media(libVLC, musicPath, FromType.FromPath);
             mediaPlayer.Play(media);
-            mediaPlayer.EndReached += (sender, e) => mediaPlayer.Play(media);
-            Console.ReadLine();
+            mediaPlayer.EndReached += (sender, e) => {
+                mediaPlayer.Stop();
+                mediaPlayer.Play(media);
+            };
         }
     }
 }

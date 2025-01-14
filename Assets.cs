@@ -15,6 +15,13 @@ public static class Assets{
                  ╚═╝╚═╝  ╚═══╝     ╚═════╝╚═╝     ╚═╝╚═════╝
 
 
-                            Press any key to start...
+                            Press enter key to start...
         ";
+    public static string GuiTemple = @"
+        qeqweqw
+    ";
+
+    static void BlockGroups() {
+        
+    }
 }
